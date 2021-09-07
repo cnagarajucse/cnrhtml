@@ -1,0 +1,52 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>untitled</title>
+	
+</head>
+
+<body>
+	<script type="text/javascript">
+		var date1=new Date();
+		document.writeln(date1);
+		document.writeln("<br>");
+		var d=parseInt(date1.getDate());
+		var m=parseInt(date1.getMonth())+1;
+		var y=parseInt(date1.getFullYear());
+		document.writeln(d);
+		document.writeln(m);
+		document.writeln(y+"<br>");
+		var d1=parseInt(date1.getHours());
+		var m1=parseInt(date1.getMinutes());
+		var y1=parseInt(date1.getSeconds());
+		document.writeln(d1+":"+m1+":"+y1+"<br>");
+		//document.writeln(m1);
+		//document.writeln(y1);
+		var dd=parseInt(prompt("enterday"));
+		var mm=parseInt(prompt("enter month"));
+		var yy=parseInt(prompt("enter year"));
+		if (d<dd){
+		   d=30+d-dd;
+		   m=m-1;
+	   }
+		   else
+		   d=d-dd;
+		   if (m<mm){
+		   m=12+m-mm;
+		   y=y-1;
+	   }
+		   else
+		   m=m-mm;
+		  y=y-yy;
+		 document.writeln("no of days:   "+d+"<br>");
+		document.writeln("no of months:  "+m+"<br>");
+		document.writeln("no of years:   "+y+"<br>");
+		      
+		
+	</script>
+</body>
+
+</html>
